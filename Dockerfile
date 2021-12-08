@@ -2,7 +2,7 @@ FROM node:16 AS build
 
 ADD . /usr/src/app
 WORKDIR /usr/src/app
-RUN yarn install && yarn build
+RUN yarn install && yarn build-dev
 
 FROM nginx:stable
 
